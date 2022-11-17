@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/post_border"
+    android:elevation="10dp"
+    android:orientation="horizontal"
+    android:id="@+id/item">
+
+
+    <ImageView
+        android:layout_marginStart="5dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/shop"
+        android:id="@+id/shop_image"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        tools:ignore="ContentDescription,MissingConstraints"/>
+
+
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/shop_image"
+        android:layout_toStartOf="@id/shop_dist"
+        android:layout_marginStart="10dp"
+        android:maxLines="2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/shop_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/km"
+        android:textColor="@color/colorAccent"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="10dp"
+        android:id="@+id/km"
+        android:textColor="@color/colorAccent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:maxLength="4"
+        android:text=" Km"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        tools:ignore="RtlSymmetry" />
+
+
+</RelativeLayout>

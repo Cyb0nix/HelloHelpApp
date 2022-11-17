@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_close"
+                android:tint="#fff" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Mon Compte"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:maxLines="1"
+            android:text="Connexion:"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#888888"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="sans-serif"
+            android:text="E-mail"
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="15dp"
+            android:text="Mot de passe"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/verifie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            android:text="Vérifier son adresse Email"
+            android:visibility="visible"
+            android:backgroundTint="#ffff"
+            android:textColor="#888888"/>
+
+        <Button
+            android:id="@+id/logout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            android:text="Déconnexion"
+            android:backgroundTint="#ffff"
+            android:textColor="#888888"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/blue_border"
+            android:text="Supprimer le compte"
+            android:backgroundTint="#ffff"
+            android:textColor="#888888" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

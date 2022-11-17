@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/appbar"
+        android:elevation="10dp"
+        android:layout_marginBottom="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="Mon Profil"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@id/appbar">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/profile_image4"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/placeholder"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:layout_toRightOf="@+id/profile_image4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id="@+id/username"
+                android:textSize="18sp"
+                android:lines="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:maxLines="3"
+            android:inputType="textPersonName"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@+id/profile_image4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorUnBlock"
+            android:id="@+id/description"
+            android:textSize="15sp"
+            android:lines="3"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="100dp"
+                android:layout_below="@id/username">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Services que vous souhaitez proposer"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/covoiturage1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Covoiturage"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/common_google_signin_btn_text_light" />
+
+                <Switch
+                    android:id="@+id/pretalimentaire1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prêt de denrées alimentaires"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/common_google_signin_btn_text_light"
+                    android:layout_marginTop="10dp"/>
+
+                <Switch
+                    android:id="@+id/pretoutil1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prêt d'outillage"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/common_google_signin_btn_text_light"
+                    android:layout_marginTop="10dp"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enregistrer"
+                    android:id="@+id/btn_set"
+                    android:background="@drawable/blue_border"
+                    android:backgroundTint="@color/colorAccent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:textColor="#fff"
+                    android:elevation="5dp"/>
+
+            </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

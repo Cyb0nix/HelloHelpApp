@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Informations utiles"/>
+        <item android:id="@+id/nav_restau"
+            android:icon="@drawable/ic_restaurant"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Restaurants aux alentours"/>
+        <item android:id="@+id/nav_commerce"
+            android:icon="@drawable/ic_shopping"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Commerces de proximité"/>
+        <item android:id="@+id/nav_med"
+            android:icon="@drawable/ic_med"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Cabinets médicales"/>
+        <item android:id="@+id/nav_pharm"
+            android:icon="@drawable/ic_pharmacy"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Pharmacies aux alentours"/>
+        <item android:id="@+id/nav_laposte"
+            android:icon="@drawable/ic_bureau_post"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Bureaux de poste"/>
+        <item android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_map"
+            android:title="Carte"
+            android:iconTint="@color/common_google_signin_btn_text_light"/>
+
+    </group>
+
+
+
+</menu>

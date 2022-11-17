@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@id/toolbar">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/profile_image5"
+            android:src="@drawable/placeholder"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/profile_image5"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:maxWidth="220dp"
+            android:id="@+id/username"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:tint="@color/colorAccent"
+            android:id="@+id/verifie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_verified_user"
+            android:layout_marginTop="13dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/username"
+            android:layout_below="@id/profile_image5"/>
+
+        <Button
+            android:id="@+id/signal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/block"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_unblocked"
+            android:background="@drawable/white_border2"
+            android:text="Signaler"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            android:visibility="visible" />
+
+
+        <Button
+        android:id="@+id/block"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/profile_image5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_unblocked"
+        android:background="@drawable/white_border2"
+        android:text="Bloquer"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="false"
+        android:visibility="visible" />
+
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_toLeftOf="@id/signal"
+            android:layout_marginTop="10dp"
+            android:lines="3"
+            android:maxLines="3"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/colorUnBlock"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/services"
+            android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#ffff"
+            android:background="@drawable/blue_border"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:text="Contacter"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/services"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/description">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Services proposés: "
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Covoiturage"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorUnBlock"
+                android:id="@+id/covoiturage_dsp"
+                android:textSize="15sp"
+                android:lines="1"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prêt d'outils"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorUnBlock"
+                android:id="@+id/pret_outil_dsp"
+                android:textSize="15sp"
+                android:lines="1"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prêt d'aliments"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorUnBlock"
+                android:id="@+id/pret_aliments_dsp"
+                android:textSize="15sp"
+                android:lines="1"
+                android:layout_marginBottom="5dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

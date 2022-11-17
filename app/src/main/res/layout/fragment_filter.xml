@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.FilterFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Chercher une annonce de covoiturage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/lieu_départ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="sans-serif"
+            android:text="Lieu de départ :"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/lieu_arrive2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="sans-serif"
+            android:text="Lieu de d'arrivée :"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/heure2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="sans-serif"
+            android:text="Heure de départ :"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:fontFamily="sans-serif"
+            android:text="Date :"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#888888"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="5"
+            android:text="Nombre de places disponibles :"
+            android:textColor="#888888"
+            android:textSize="18sp" />
+
+        <NumberPicker
+            android:id="@+id/places2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:width="150dp"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/filtrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/blue_border"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Filtrer"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+</LinearLayout>

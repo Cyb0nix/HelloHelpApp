@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_annonce"
+            android:icon="@drawable/ic_searchdark"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Rechercher un service"/>
+        <item android:id="@+id/nav_mes_annonces"
+            android:icon="@drawable/ic_annonce"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Mes annonces"/>
+        <item android:id="@+id/nav_emprent"
+            android:icon="@drawable/ic_people"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Emprunter"/>
+        <item android:id="@+id/nav_post_ann"
+            android:icon="@drawable/ic_post"
+            android:iconTint="@color/common_google_signin_btn_text_light"
+            android:title="Poster une annonce"/>
+
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeEmailActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier votre adresse Email"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email2"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="50dp"
+            app:met_floatingLabel="normal"
+            android:hint="Entrer votre nouvelle adresse e-mail"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email3"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint="Confirmer adresse e-mail"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/btn_confirm2"
+            android:background="@drawable/blue_border"
+            android:layout_marginTop="150dp"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "522969446050",
+    "firebase_url": "https://hello-help.firebaseio.com",
+    "project_id": "hello-help",
+    "storage_bucket": "hello-help.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522969446050:android:8d57116f6f0a9c22",
+        "android_client_info": {
+          "package_name": "com.cybonix.hellohelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522969446050-3b69l0boqrlda3f6ghs3mrbj5k9l9jfg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cybonix.hellohelp",
+            "certificate_hash": "48c935714e14b93721a606a7ed82c7d91912a1d8"
+          }
+        },
+        {
+          "client_id": "522969446050-nru6eqmu24cj4bb0oqfgaav70ahgmd33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa5DTvuXyVcXZfkoJMvMd6ZaMpAS3Mzzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522969446050-nru6eqmu24cj4bb0oqfgaav70ahgmd33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

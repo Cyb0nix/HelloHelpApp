@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/post_border"
+    android:elevation="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/image_profile"
+                android:layout_margin="10dp"
+                android:src="@mipmap/ic_hello_help"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_gravity="center_vertical"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:id="@+id/verifie3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_verified_user"
+                android:tint="@color/colorAccent"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/close_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_delete"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_depart"
+                android:tint="@color/colorBlock"
+                android:id="@+id/ic_dep"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor= "@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Départ :"
+                android:layout_toRightOf="@id/ic_dep"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/départ"/>
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:tint="@color/colorBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrive"
+                android:id="@+id/ic_arr"
+                android:layout_alignBottom="@id/arrivé" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:text="Arrivée :"
+                android:layout_toRightOf="@id/ic_arr"
+                android:layout_below="@id/lieu_départ"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/arrivé"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:id="@+id/lieu_départ"
+                android:layout_toRightOf="@id/départ"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/arrivé"
+                android:layout_below="@id/lieu_départ"
+                android:id="@+id/lieu_arrivé"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_time"
+                android:layout_below="@id/lieu_arrivé"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/heure"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/heure"
+                android:layout_below="@id/lieu_arrivé"
+                android:id="@+id/heure_départ"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_date"
+                android:tint="@color/colorAccent"
+                android:layout_below="@id/lieu_arrivé"
+                android:layout_toRightOf="@id/heure_départ"
+                android:layout_marginTop="10dp"
+                android:id="@+id/date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/date"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/lieu_arrivé"
+                android:id="@+id/date_dep"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_people"
+                android:tint="@color/colorAccent"
+                android:layout_below="@id/lieu_arrivé"
+                android:layout_toRightOf="@id/date_dep"
+                android:layout_marginTop="10dp"
+                android:id="@+id/place"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/place"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/lieu_arrivé"
+                android:id="@+id/nbr_places"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/orange_border"
+                android:id="@+id/btn_chat"
+                android:textColor="#ffff"
+                android:layout_below="@id/nbr_places"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Contacter"
+                android:textAllCaps="false"/>
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

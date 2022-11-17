@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Créer un compte"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                app:met_maxCharacters="20"
+                android:hint="Nom d'utilisateur"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Email"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Mot de passe"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_conf"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                app:met_floatingLabel="normal"
+                android:hint="Confirmer le mot de passe"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Votre quartier"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp">
+
+                    <RadioButton
+                        android:id="@+id/blancmesnilnord"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Blanc-Mesnil Nord"
+                        android:textSize="16sp"
+                        android:textColor="@color/common_google_signin_btn_text_light"/>
+
+                    <RadioButton
+                        android:id="@+id/blancmesnilcentre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Blanc-Mesnil Centre"
+                        android:textSize="16sp"
+                        android:textColor="@color/common_google_signin_btn_text_light"/>
+
+                    <RadioButton
+                        android:id="@+id/blancmesnilsud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Blanc-Mesnil Sud"
+                        android:textSize="16sp"
+                        android:textColor="@color/common_google_signin_btn_text_light"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@id/dist_nub"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dist_nord"
+                        android:text="0.0"
+                        android:maxLength="3"
+                        android:textSize="16sp"
+                        android:layout_marginTop="18dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dist_centre"
+                        android:text="0.0"
+                        android:maxLength="3"
+                        android:textSize="16sp"
+                        android:layout_marginTop="18dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginEnd="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dist_sud"
+                        android:text="0.0"
+                        android:maxLength="3"
+                        android:textSize="16sp"
+                        android:layout_marginTop="18dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginEnd="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    android:id="@+id/dist_nub"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Km"
+                        android:textSize="16sp"
+                        android:layout_marginTop="18dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginEnd="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Km"
+                        android:textSize="16sp"
+                        android:layout_marginTop="18dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginEnd="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Km"
+                        android:textSize="16sp"
+                        android:layout_marginTop="18dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginEnd="10dp"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services que vous souhaitez proposer"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Switch
+                android:id="@+id/covoiturage"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Covoiturage"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/common_google_signin_btn_text_light" />
+
+            <Switch
+                android:id="@+id/pretalimentaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prêt de denrées alimentaires"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:layout_marginTop="10dp"/>
+
+            <Switch
+                android:id="@+id/pretoutil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prêt d'outillage"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/common_google_signin_btn_text_light"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Créer un compte"
+                android:backgroundTint="@color/colorAccent"
+                android:id="@+id/btn_register"
+                android:background="@drawable/blue_border"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:textColor="#fff"
+                android:elevation="5dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

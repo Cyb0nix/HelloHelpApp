@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/post_border"
+    android:padding="8dp"
+    android:elevation="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/image_profile"
+            android:src="@drawable/image_pp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:id="@+id/username"
+            android:layout_toEndOf="@id/image_profile"
+            android:layout_toRightOf="@id/image_profile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="7dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <ImageView
+            android:id="@+id/verifie2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/username"
+            android:src="@drawable/ic_verified_user"
+            android:tint="@color/colorAccent"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_profile"
+            android:text="contenu"
+            android:id="@+id/contenu"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/orange_border"
+            android:id="@+id/btn_chat"
+            android:textColor="#ffff"
+            android:layout_below="@id/contenu"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Contacter"
+            android:textAllCaps="false"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
